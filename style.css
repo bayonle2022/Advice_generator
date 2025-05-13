@@ -1,0 +1,103 @@
+ body {
+      font-family: 'Arial', sans-serif;
+      background-color:hsl(218, 23%, 16%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      background-color: hsl(217, 19%, 24%);
+    }
+    .advice-card {
+    height: 150px;
+      max-width: 600px;
+      
+    }
+    h1 {
+      font-size: 15px;
+      color: hsl(150, 100%, 66%);
+    }
+    p {
+      font-size: 18px;
+      color: hsl(193, 38%, 86%);
+    }
+    button {
+      background-color: hsl(150, 100%, 66%);
+      color: white;
+      height: 50px;
+      width: 50px;
+      border: none;
+      border-radius: 500px;
+     
+      cursor: pointer;
+      position: absolute;bottom: 240px; left: 750px;
+    }
+    button:hover {
+      background-color: hsl(150, 100%, 56%);
+    }
+    #pat {
+      max-width:500px ;
+    }
+
+  @media screen and (max-width: 600px) {
+    body {
+      padding: 20px;
+      flex-direction: column; /* Stack elements vertically */
+    }
+    .container {
+      width: 100%;
+      height: auto; /* Allow height to adjust dynamically */
+      padding: 15px;
+    }
+    .advice-card {
+      height: auto; /* Adjust height for content */
+      max-width: 100%; /* Ensure it fits within the screen */
+    }
+    button {
+      position: static; /* Remove absolute positioning */
+      margin: 20px auto 0; /* Center the button */
+      display: block; /* Ensure it's centered */
+    }
+    h1 {
+      font-size: 18px; /* Slightly smaller font size */
+    }
+    p {
+      font-size: 14px; /* Adjust font size for readability */
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1504px) {
+    body {
+        padding: 30px;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .container {
+        width: 80%; /* Slightly smaller width for better fit */
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 20px;
+    }
+    .advice-card {
+        height: auto; /* Adjust height for content */
+        max-width: 90%; /* Ensure it fits within the screen */
+        margin: 0 auto; /* Center the card */
+    }
+    button {
+        position: static; /* Remove absolute positioning */
+        margin: 30px auto 0; /* Center the button */
+        display: block; /* Ensure it's centered */
+        height: 60px; /* Slightly larger button for better usability */
+        width: 60px;
+    }
+    h1 {
+        font-size: 20px; /* Slightly larger font size */
+    }
+    p {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+}
